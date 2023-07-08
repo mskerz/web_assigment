@@ -9,10 +9,9 @@ var loginAttempts = 3; // โอกาสในการ login ที่เร�
 
       
             // เช็ค email password ถูกต้องหรือไม่ userMail@gmail.com -userPassword
-            if (email === "admin@user" && password === "1234") {
+            if (email === "userMail@gmail.com" && password === "userPassword") {
                  
                 alert("Login Successful!");
-                // เก็บค่า email ลง ใน session เพื่อแสดงผลในหน้าเว็บของ MainForm.html
                 sessionStorage.setItem("email", email);
                 return true;
             } else {
