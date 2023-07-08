@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <title>Login Form</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
+
+    * {
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .border-form {
+        border: 1px solid rgb(215, 215, 215);
+        
+    }
+    
+</style>
+
+<body style="background-color: rgb(230, 230, 230);">
+    <div class="container d-flex justify-content-center">
+        <div class= " border-form col-sm-5 m-4 p-4 bg-white rounded-2 "  >
+            <form action="MainForm.html" onsubmit="return LoginValidateForm()" method="post">
+                <h1 class="text-success">Login Form</h1>
+
+                <div class="mb-3 ">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" >
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" >
+                </div>
+                <input type="submit" class="btn btn-success" id="login-btn" value="Login">
+            </form>
+            
+        </div>
+
+    </div>
+     
+</body>
+<script src="login_script.js"></script>
+
+</html>
